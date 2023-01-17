@@ -15,7 +15,7 @@ const Placedetail = (name) => {
         <div className={`InformationImagesMobile ${images ? 'Bringtofront' : ''}`} onClick={()=>{setImages(true);setInformation(false);}}>Images</div>
       </div>
       <div className={`InformationDesktop ${!information ? 'DisplayNone' : ''}`}>
-        <div className='PlacedetailImg'><img src={filterdata[0].profile_image_url}></img></div>
+        <div className='PlacedetailImg'><img alt='PlacedetailImg' src={filterdata[0].profile_image_url}></img></div>
         <div className='InformationHeader'>
           <h2>{filterdata[0].name}</h2>
           <div className='InformationRating'>
@@ -43,9 +43,9 @@ const Placedetail = (name) => {
       <div className={`ImgDesktop ${!images ? 'DisplayNone' : ''}`}>
         <h3>Images</h3>
         <div className='Imgs'>
-          <img className='img1' src={filterdata[0].images[0]}/>
-          <img className='img2' src={filterdata[0].images[1]}/>
-          <img className='img3' src={filterdata[0].images[2]}/>
+          <img className='img1' alt='ExampleImg' src={filterdata[0].images[0]}/>
+          <img className='img2' alt='ExampleImg' src={filterdata[0].images[1]}/>
+          <img className='img3' alt='ExampleImg' src={filterdata[0].images[2]}/>
         </div>
       </div>
     </div>

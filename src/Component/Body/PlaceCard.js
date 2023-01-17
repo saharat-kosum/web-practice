@@ -13,7 +13,7 @@ const PlaceCard = (Data) => {
   return (
     <div className='PlaceCard'>
         <div className='PlaceCardHeader'>
-            <img className='ProfileImg' src={Data.element.profile_image_url}/>
+            <img className='ProfileImg' alt='ProfileImg' src={Data.element.profile_image_url}/>
             <div className='PlaceCardProfile'>
                 <h3><Link to={`/placedetail/${Data.element.name}`} onClick={()=>Data.sentname(Data.element.name)} style={{color:'black'}}>{Data.element.name}</Link></h3>
                 <div className='PlaceCardDetail'>
@@ -34,12 +34,12 @@ const PlaceCard = (Data) => {
             </div>
         </div> 
         <div>
-            <img className='ExampleImgDesktop sample1' src={images[0]} />
-            <img className='ExampleImgDesktop' src={images[1]} />
-            <img className='ExampleImgDesktop sample3' src={images[2]} />
+            <img className='ExampleImgDesktop sample1' alt='ExampleImg' src={images[0]} />
+            <img className='ExampleImgDesktop' alt='ExampleImg' src={images[1]} />
+            <img className='ExampleImgDesktop sample3' alt='ExampleImg' src={images[2]} />
         </div>
         <div>
-            <img className='ExampleImgMobile' src={images[imageIndex]}/>
+            <img className='ExampleImgMobile' alt='ExampleImg' src={images[imageIndex]}/>
         </div> 
     </div>
   )
