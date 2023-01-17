@@ -1,0 +1,42 @@
+.Content{
+    display: flex;
+    margin-left:131px;
+    flex-wrap: wrap;
+}
+
+.FooterContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.Footerbtn{
+    background-color: var(--text-white);
+    color: var(--text-gray3);
+    border: 1px solid var(--text-gray3);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    outline:none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.PageNumber{
+    margin: 0 36px;
+    background-color: var(--bg-blue);
+    color: var(--text-white);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    outline:none;
+    padding: 7px 17px;
+}
+
+@media (max-width:600px) {
+    .Content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

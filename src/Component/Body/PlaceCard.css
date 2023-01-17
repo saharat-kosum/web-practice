@@ -1,0 +1,153 @@
+.PlaceCard{
+    background-color: var(--text-white);
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 400px;
+    height: 225px;
+    padding: 17px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.PlaceCardHeader{
+    display: flex;
+}
+
+.PlaceCardProfile{
+    width: 280px;
+}
+
+.ProfileImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 0 16px 11px 0;
+}
+
+.PlaceCardDetail{
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+
+.PlaceCardDetail p{
+    margin-left: 6px;
+}
+
+.PlaceCardTime{
+    display: flex;
+}
+
+.PlaceCardRating{
+    display: flex;
+}
+
+.ExampleImgDesktop{
+    width: 120px;
+    height: 120px;
+}
+
+.sample1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sample3{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ExampleImgMobile{
+    display: none;
+}
+
+.PlaceCardRatingMobile{
+    display: none;
+}
+
+.Arrow{
+    display: none;
+}
+
+@media (max-width:600px) {
+    .PlaceCard{
+        margin-top: 20px;
+        margin-right: 0;
+        width: 357px;
+        height: 350px;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid var(--text-gray3);
+    }
+    .PlaceCardHeader{
+        display: inline-block;
+        width: 100%;
+    }
+    .ProfileImg{
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 87px;
+        object-fit: cover;
+    }
+    .PlaceCardProfile{
+        width: 100%;
+        padding: 5px 13px;
+        font-size: 11px;
+    }
+    .PlaceCardProfile h3{
+        font-size: 13px;
+    }
+    .calendar.css-i4bv87-MuiSvgIcon-root{
+        font-size: small;
+    }
+    .PlaceCardRating{
+        display: none;
+    }
+    .PlaceCardRatingMobile{
+        display: inline-block;
+        width: 67px;
+        height: 31px;
+        color: var(--text-white);
+        border-radius: 30px;
+        background-color: var(--bg-blue);
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 2px 24px;
+        position: relative;
+        top: -55px;
+        left: -20px;
+    }
+    .ExampleImgDesktop{
+        display: none;
+    }
+    .ExampleImgMobile{
+        display: inline-block;
+        width: 331px;
+        height: 176px;
+        margin-left: 13px;
+        border-radius: 10px;
+    }
+    .Arrow{
+        display: flex;
+        cursor: pointer;
+    }
+    .Arrowbtn{
+        width: 25px;
+        height: 25px;
+        background-color: var(--text-white);
+        color: var(--text-gray3);
+        border-radius: 50px;
+        padding: 1px;
+    }
+    .ArrowLeft{
+        position: relative;
+        top: 115px;
+        left: -130px;
+    }
+    .ArrowRight{
+        position: relative;
+        top: 115px;
+        left: 122px;
+    }
+}

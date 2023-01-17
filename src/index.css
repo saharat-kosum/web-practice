@@ -1,13 +1,43 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Kanit', sans-serif;
+  list-style-type: none;
+  text-decoration:none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --bg-blue:#134B8A;
+  --bg-navy-blue:#0F1E56;
+  --bg-gray:#C3BEBB;
+  --bg-sky-blue:#C4D3E9;
+  --text-black:#000000;
+  --text-white:#FFFFFF;
+  --text-gray1:#605C5C;
+  --text-gray2:#E0E0E0;
+  --text-gray3:#9E9E9E;
+  --max-width:1271px;
+}
+
+.btn{
+  width: 102px;
+  height: 42px;
+  color: var(--text-white);
+  border-radius: 30px;
+  background-color: var(--bg-blue);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 6px 31px;
+}
+
+.btn:hover,.btn:active{
+  background-color: var(--bg-navy-blue);
+}
+
+.btn:disabled{
+  background-color: var(--bg-gray);
 }
