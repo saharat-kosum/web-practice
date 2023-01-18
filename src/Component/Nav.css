@@ -49,6 +49,7 @@ li{
     width: 100%;
     border: none;
     outline: none;
+    background-color: inherit;
 }
 
 .Header input{
@@ -56,6 +57,7 @@ li{
     border: none;
     margin-left: 17px;
     width: 100%;
+    background-color: inherit;
 }
 
 .searchbar{

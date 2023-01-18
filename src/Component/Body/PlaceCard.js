@@ -38,7 +38,7 @@ const PlaceCard = (Data) => {
             <img className='ExampleImgDesktop' alt='ExampleImg' src={images[1]} />
             <img className='ExampleImgDesktop sample3' alt='ExampleImg' src={images[2]} />
         </div>
-        <div>
+        <div className='ImgCon'>
             <img className='ExampleImgMobile' alt='ExampleImg' src={images[imageIndex]}/>
         </div> 
     </div>
